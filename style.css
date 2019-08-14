@@ -3,9 +3,12 @@
     font-family: 'Benguiat Bold';
     src: url('fonts/Benguiat Bold.ttf');
 }
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
 body{
     margin: 0;
-    box-sizing: border-box;
     background-color: black;
     color: white;
     font-family: 'Montserrat',sans-serif;
@@ -65,6 +68,24 @@ nav{
     color: red;
     padding: 37px 0;
 }
+#bars{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 138px;
+    width: 138px;
+    color: red;
+    display: none;
+    text-align: center;
+}
+#bars i{
+   line-height: 138px;
+    font-size: 3em;
+}
+#bars:hover{
+    color: white;
+    cursor: pointer;
+}
 @media screen and (max-width: 1515px){
     #header-title{
         padding-left: 2%;
@@ -90,6 +111,39 @@ nav{
     }
     #navbar a{
         padding: 58px 0;
+    }
+}
+@media screen and (max-width: 935px) {
+    header{
+        overflow: hidden;
+        height: auto;
+    }
+    .open{
+        overflow: visible;
+    }
+    nav{
+        float: none;
+        height: auto;
+        background-color: black;
+        position: absolute;
+        left: 0;
+        top: 138px;
+        padding: 0;
+        width: 100%;
+    }
+    #navbar{
+        flex-wrap: wrap;
+    }
+    .nav-item{
+        width: 100%;
+        line-height: 70px;
+        text-align: center;
+    }
+    #navbar a{
+        padding: 20px 20%;
+    }
+    #bars{
+        display: block;
     }
 }
 #picture{
@@ -132,13 +186,18 @@ main{
     margin-bottom: 30px;
     margin-top: 20px;
 }
+.plot-padding{
+    padding: 0;
+    margin: 1.5em auto;
+    max-width: 1100px;
+    width: 100%;
+}
 .season{
-    width: 70%;
     border: 1px solid red;
     box-shadow: 0 0 20px rgba(255,0,0,0.5);
     text-align: justify;
     padding: 20px;
-    margin: 1.5em 3%;
+    box-sizing: border-box;
 }
 .season:first-child{
     margin-top: 0;
@@ -150,6 +209,16 @@ main{
     text-indent: 2em;
     margin: 0;
     hyphens: auto;
+}
+@media screen and (max-width: 1190px){
+    .plot-padding{
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .season{
+        border: none;
+        font-size: 16px;
+    }
 }
 .article{
     display: flex;
@@ -213,7 +282,7 @@ main{
 .actor-item{
     height: auto;
     width: 117px;
-    margin: 0 13px;
+    margin: 0 13px 20px;
     box-shadow: 0 0 17px 1px rgba(255, 0, 0, 0.5);
 }
 
@@ -259,13 +328,16 @@ main{
 }
 #footer p{
     padding-bottom: 20px;
-    margin: 0;
     text-align: center;
+    margin-top: 20px;
 }
 .footer-card{
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
+}
+.footer-set h3{
+    margin: 20px 0;
 }
 .footer-set ul{
     list-style: none;
