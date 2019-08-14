@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@font-face {
+    font-family: 'Benguiat Bold';
+    src: url('fonts/Benguiat Bold.ttf');
+}
+body{
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 16px;
+}
+header{
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    color: red;
+    background-color: black;
+    z-index: 1;
+}
+.container{
+    max-width: 1473px;
+    width: 100%;
+    margin: 0 auto;
+    height: inherit;
+}
+#header-title{
+    float: left;
+    line-height: 100px;
+    font-family: 'Benguiat Bold', sans-serif;
+    color: black;
+    font-size: 3em;
+    text-transform: uppercase;
+    text-shadow: 1px 0 red, 0 -1px red, -1px 0 red, 0 1px red, 0 0 20px rgba(255,0,0,0.5);
+}
+.line{
+    display: inline-block;
+}
+nav{
+    float: right;
+    height: 100%;
+}
+#navbar{
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.nav-item {
+    list-style: none;
+    line-height: 100px;
+    padding: 0 12px;
+}
+.nav-item:hover{
+    box-shadow: 0 5px 20px rgba(255,0,0,0.5),0 1px red;
+}
+#navbar a{
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 0 0 20px rgb(255, 0, 0);
+    font-size: 1.1em;
+    color: red;
+    padding: 37px 0;
+}
+@media screen and (max-width: 1515px){
+    #header-title{
+        padding-left: 2%;
+    }
+    nav{
+        padding-right: 2%;
+    }
+}
+@media screen and (max-width: 1190px){
+    .line{
+        display: block;
+        text-align: center;
+    }
+    header{
+        height: 138px;
+    }
+    #header-title{
+        line-height: normal;
+        padding-top: 10px;
+    }
+    .nav-item{
+        line-height: 138px;
+    }
+    #navbar a{
+        padding: 58px 0;
+    }
+}
+#picture{
+    background: url("img/logo1.jpg") center;
+    position: fixed;
+    top: 100px;
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    z-index: -1;
+}
+main{
+    position: absolute;
+    top: 700px;
+    background-color: #0b0b0b;
+    width: 100%;
+    z-index: 0;
+}
+#plot{
+    font-size: 18px;
+}
+#plot h1, #characters h1, #actors h1, #trailer h1{
+    text-align: center;
+    font-size: 2em;
+    margin-top: 1.5em;
+    color: red;
+}
+#plot-description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+#plot-description h2{
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.season{
+    width: 70%;
+    border: 1px solid red;
+    box-shadow: 0 0 20px rgba(255,0,0,0.5);
+    text-align: justify;
+    padding: 20px;
+    margin: 1.5em 3%;
+}
+.season p{
+    text-indent: 2em;
+    margin: 0;
+    hyphens: auto;
+}
+.article{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+    font-size: 18px;
+}
+.article:nth-child(odd){
+    flex-direction: row-reverse;
+}
+.article img{
+    max-width: 50%;
+    box-shadow: 0 0 20px 1px rgba(255, 0, 0, 0.5);
+    box-sizing: border-box;
+    margin: 0 2%;
+}
+.article .character-description{
+    max-width: 40%;
+    margin: 0 2%;
+    overflow: hidden;
+    border: 1px solid red;
+    box-sizing: border-box;
+    padding: 20px;
+    box-shadow: 0 0 20px 1px rgba(255, 0, 0, 0.5);
+}
+.article .character-description h2{
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+.article .character-description p{
+    text-align: justify;
+    margin: 0;
+}
+@media screen and (max-width: 1162px) {
+    .article img{
+        max-width: 40%;
+    }
+    .article .character-description{
+        max-width: 50%;
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 1055px){
+    .article img{
+        max-width: 100%;
+    }
+    .article .character-description{
+        max-width: 100%;
+    }
+}
+
+#actors-set{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.actor-item{
+    height: auto;
+    width: 117px;
+    margin: 0 13px 20px;
+    box-shadow: 0 0 17px 1px rgba(255, 0, 0, 0.5);
+}
+
+.actor-item img{
+    display: block;
+    height: 188px;
+    width: 100%;
+}
+.actor-caption{
+    background-color: rgba(255, 255, 255, 0.18);
+    height: 56px;
+    padding: 2px 3px;
+}
+.actor-caption p{
+    margin: 0;
+}
+.actor-caption p:last-child{
+    font-size: 0.8em;
+    font-style: italic;
+    margin-top: 3px;
+}
+/*
+main > img{
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+main > div{
+    width: 100%;
+    height: 200px;
+    background-color: #c6c6c6;
+    position: absolute;
+    top: 500px;
+}*/
