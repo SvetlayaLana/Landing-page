@@ -33,14 +33,13 @@
         </nav>
     </div>
 </header>
-<div id="pop-up"></div>
 <div id="picture"></div>
 <main>
     <div class="container">
         <section id="plot">
             <h1 tabindex="0">Сюжет сериала</h1>
             <div id="plot-description">
-                <div class="season">
+                <div class="season" id="first-season">
                     <h2>Первый сезон</h2>
                     <p>6 ноября 1983 года в штате Индиана, в вымышленном городе Хокинс таинственным образом исчезает
                         12-летний Уилл Байерс. Мать пропавшего мальчика, Джойс, не находит себе места, пытаясь найти сына.
@@ -51,7 +50,7 @@
                         секретная правительственная организация, занимающаяся исследованием портала, ведущего в параллельное
                         измерение.</p>
                 </div>
-                <div class="season">
+                <div class="season" id="second-season">
                     <h2>Второй сезон</h2>
                     <p> Прошёл год со дня победы над чудовищем из параллельного измерения. Уилла мучают видения и
                         перемещения на
@@ -66,7 +65,7 @@
                         подругой по рации. 011, в свою очередь, тоскует по нему, слушая его 353 дня. Но она не может
                         отвечать,
                         из-за запрета Хоппера.</p></div>
-                <div class="season">
+                <div class="season" id="third-season">
                     <h2>Третий сезон</h2>
                     <p>В 1984 году советские военные пытаются открыть свой портал в параллельное измерение, но терпят
                         неудачу.
@@ -84,7 +83,7 @@
         </section>
         <section id="characters">
             <h1>Главные персонажи</h1>
-            <article class="article">
+            <article class="article" id="mike">
                 <img src="img/img-small/mike.jpg">
                 <div class="character-description">
                     <h2>Майк</h2>
@@ -95,7 +94,7 @@
                         люди.</p>
                 </div>
             </article>
-            <article class="article">
+            <article class="article" id="el">
                 <img src="img/img-small/el.jpg">
                 <div class="character-description">
                     <h2>Одинадцать</h2>
@@ -106,7 +105,7 @@
                         угрожал причинить вред ее друзьям. </p>
                 </div>
             </article>
-            <article class="article">
+            <article class="article" id="will">
                 <img src="img/img-small/will.jpg">
                 <div class="character-description">
                     <h2>Уилл</h2>
@@ -116,7 +115,7 @@
                         слабохарактерный, однако, в небольшой степени замкнутый в себе. </p>
                 </div>
             </article>
-            <article class="article">
+            <article class="article" id="dastin">
                 <img src="img/img-small/dastin.jpg">
                 <div class="character-description">
                     <h2>Дастин</h2>
@@ -128,7 +127,7 @@
                         роде домашним животным. </p>
                 </div>
             </article>
-            <article class="article">
+            <article class="article" id="lucas">
                 <img src="img/img-small/tom.jpg">
                 <div class="character-description">
                     <h2>Лукас</h2>
@@ -137,7 +136,7 @@
                         способностям, но потом смог перейти через себя и довериться ей, назвав её своим другом. </p>
                 </div>
             </article>
-            <article class="article">
+            <article class="article" id="max">
                 <img src="img/img-small/maxin.jpg">
                 <div class="character-description">
                     <h2>Макс</h2>
@@ -149,7 +148,7 @@
                         когда поймет всю серьезность ситуации. </p>
                 </div>
             </article>
-            <article class="article">
+            <article class="article" id="steve">
                 <img src="img/img-small/steve.jpg">
                 <div class="character-description">
                     <h2>Стив</h2>
@@ -259,6 +258,53 @@
 
 <!--    <img src="img/dims.jfif">-->
 <!--    <div></div>-->
+    <div id="footer">
+        <div class="container">
+            <div class="footer-card">
+                <div class="footer-set">
+                    <h3>Сезоны</h3>
+                    <ul>
+                        <li>
+                            <a href="#plot">Первый сезон</a>
+                        </li>
+                        <li>
+                            <a href="#first-season">Второй сезон</a>
+                        </li>
+                        <li>
+                            <a href="#second-season">Третий сезон</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-set">
+                    <h3>Персонажи</h3>
+                    <ul>
+                        <li>
+                            <a href="#mike">Майк</a>
+                        </li>
+                        <li>
+                            <a href="#el">Одинадцать</a>
+                        </li>
+                        <li>
+                            <a href="#dastin">Дастин</a>
+                        </li>
+                        <li>
+                            <a href="#will">Уилл</a>
+                        </li>
+                        <li>
+                            <a href="#lucas">Лукас</a>
+                        </li>
+                        <li>
+                            <a href="#max">Макс</a>
+                        </li>
+                        <li>
+                            <a href="#steve">Стив</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p>&copy; 2019 Светлана Тернопольская</p>
+        </div>
+    </div>
 </main>
 
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
