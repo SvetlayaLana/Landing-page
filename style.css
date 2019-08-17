@@ -103,6 +103,258 @@ nav{
 .open{
     overflow: visible;
 }
+
+#picture{
+    background: url("img/logo1.jpg") center;
+    position: fixed;
+    top: 50px;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    z-index: -1;
+}
+main{
+    position: absolute;
+    top: 100vh;
+    background-color: #0b0b0b;
+    width: 100%;
+    z-index: 0;
+}
+#st{
+    position: sticky;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+}
+#st div{
+    background: url("img/wallpaper.jpg") no-repeat top;
+    background-size: cover;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+}
+
+#plot{
+    font-size: 18px;
+}
+#plot h1, #characters h1, #actors h1, #trailer h1{
+    text-align: center;
+    font-size: 2em;
+    margin-top: 2.5em;
+    margin-bottom: 100px;
+    color: red;
+}
+#characters h1{
+    margin-bottom: 0;
+}
+#plot-description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+#plot-description h2{
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.season{
+    max-width: 1200px;
+    width: 100%;
+    border: 1px solid red;
+    box-shadow: 0 0 20px rgba(255,0,0,0.5);
+    text-align: justify;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 1.5em auto;
+}
+.season:first-child{
+    margin-top: 0;
+}
+.season:last-child{
+    margin-bottom: 0;
+}
+.season p{
+    text-indent: 2em;
+    margin: 0;
+    hyphens: auto;
+    line-height: 1.5;
+}
+.season .image-block{
+    height: auto;
+    width: 100%;
+    margin: 3em 0;
+    display: flex;
+    justify-content: center;
+    padding: 0 25px;
+}
+.season .image-block img{
+    position: relative;
+    margin-left: -70px;
+    width: auto;
+    height: 200px;
+    box-shadow: -5px 5px 10px #424242;
+    border: 5px #141414 ridge;
+    transition: transform 1s;
+}
+.season .image-block img:first-child{
+    margin-left: 0;
+}
+.season .image-block img:nth-child(-n+3){
+    transform: rotate(-20deg);
+}
+.season .image-block img:nth-child(n+4){
+    transform: rotate(20deg);
+}
+.season .image-block img:hover {
+    z-index: 10 !important;
+    transform: scale(1.5);
+    box-shadow: none;
+}
+
+
+.article{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+.article:nth-child(odd){
+    flex-direction: row-reverse;
+}
+.article img{
+    max-width: 50%;
+    box-shadow: 0 0 20px 1px rgba(255, 0, 0, 0.5);
+    box-sizing: border-box;
+    margin: 0 2%;
+}
+.article .character-description{
+    max-width: 40%;
+    margin: 0 2%;
+    overflow: hidden;
+    border: 1px solid red;
+    box-sizing: border-box;
+    padding: 20px;
+    box-shadow: 0 0 20px 1px rgba(255, 0, 0, 0.5);
+}
+.article .character-description h2{
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+.article .character-description p{
+    text-align: justify;
+    margin: 0;
+    line-height: 1.5;
+}
+@media screen and (max-width: 1162px) {
+    .article img{
+        max-width: 40%;
+    }
+    .article .character-description{
+        max-width: 50%;
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 1055px){
+    .article img{
+        max-width: 100%;
+    }
+    .article .character-description{
+        max-width: 100%;
+    }
+}
+
+
+#actors-set{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.actor-item{
+    height: auto;
+    width: 117px;
+    margin: 0 13px 20px;
+    box-shadow: 0 0 17px 1px rgba(255, 0, 0, 0.5);
+}
+.actor-item img{
+    display: block;
+    height: 188px;
+    width: 100%;
+}
+.actor-caption{
+    background-color: rgba(255, 255, 255, 0.18);
+    height: 56px;
+    padding: 2px 3px;
+}
+.actor-caption p{
+    margin: 0;
+}
+.actor-caption p:last-child{
+    font-size: 0.8em;
+    font-style: italic;
+    margin-top: 3px;
+}
+
+
+#iframe-div{
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    height:0;
+    padding-bottom:42%;
+    overflow:hidden;
+}
+#iframe-div iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+#footer{
+    margin-top: 50px;
+    background-color: black;
+    border-top: 1px solid red;
+    box-shadow: 0 -1px 10px red;
+}
+#footer p{
+    padding-bottom: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+.footer-card{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.footer-set h3{
+    margin: 20px 0;
+}
+.footer-set ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.footer-set li{
+    margin-top: 5px;
+}
+.footer-set a{
+    text-decoration: none;
+    color: white;
+}
+.footer-set a:hover{
+    color: red;
+}
+
+
 @media screen and (max-width: 1515px){
     .container{
         padding-left: 2%;
@@ -134,6 +386,9 @@ nav{
     }
     #navbar a{
         padding-bottom: 31px;
+    }
+    #picture{
+        background-image: url("img/img-small/logo1_1000px.jpg");
     }
 }
 @media screen and (max-width: 900px){
@@ -208,228 +463,3 @@ nav{
         box-shadow: 0 5px 20px rgba(255,0,0,0.5);
     }
 }
-
-#picture{
-    background: url("img/logo1.jpg") center;
-    position: fixed;
-    top: 50px;
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    z-index: -1;
-}
-main{
-    position: absolute;
-    top: 100vh;
-    background-color: #0b0b0b;
-    width: 100%;
-    z-index: 0;
-}
-#plot{
-    font-size: 18px;
-}
-#plot h1, #characters h1, #actors h1, #trailer h1{
-    text-align: center;
-    font-size: 2em;
-    margin-top: 2.5em;
-    margin-bottom: 100px;
-    color: red;
-}
-#characters h1{
-    margin-bottom: 0;
-}
-#plot-description{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-#plot-description h2{
-    text-align: center;
-    margin-bottom: 30px;
-    margin-top: 20px;
-}
-.plot-padding{
-    padding: 0;
-    margin: 1.5em auto;
-    max-width: 1100px;
-    width: 100%;
-}
-.season{
-    border: 1px solid red;
-    box-shadow: 0 0 20px rgba(255,0,0,0.5);
-    text-align: justify;
-    padding: 20px;
-    box-sizing: border-box;
-}
-.season:first-child{
-    margin-top: 0;
-}
-.season:last-child{
-    margin-bottom: 0;
-}
-.season p{
-    text-indent: 2em;
-    margin: 0;
-    hyphens: auto;
-    line-height: 1.5;
-}
-@media screen and (max-width: 1190px){
-    .plot-padding{
-        padding-left: 2%;
-        padding-right: 2%;
-    }
-    .season{
-        border: none;
-        font-size: 16px;
-    }
-}
-.article{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-}
-.article:nth-child(odd){
-    flex-direction: row-reverse;
-}
-.article img{
-    max-width: 50%;
-    box-shadow: 0 0 20px 1px rgba(255, 0, 0, 0.5);
-    box-sizing: border-box;
-    margin: 0 2%;
-}
-.article .character-description{
-    max-width: 40%;
-    margin: 0 2%;
-    overflow: hidden;
-    border: 1px solid red;
-    box-sizing: border-box;
-    padding: 20px;
-    box-shadow: 0 0 20px 1px rgba(255, 0, 0, 0.5);
-}
-.article .character-description h2{
-    text-align: center;
-    margin: 0 0 20px 0;
-}
-.article .character-description p{
-    text-align: justify;
-    margin: 0;
-    line-height: 1.5;
-}
-@media screen and (max-width: 1162px) {
-    .article img{
-        max-width: 40%;
-    }
-    .article .character-description{
-        max-width: 50%;
-        font-size: 16px;
-    }
-}
-@media screen and (max-width: 1055px){
-    .article img{
-        max-width: 100%;
-    }
-    .article .character-description{
-        max-width: 100%;
-    }
-}
-
-#actors-set{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-}
-.actor-item{
-    height: auto;
-    width: 117px;
-    margin: 0 13px 20px;
-    box-shadow: 0 0 17px 1px rgba(255, 0, 0, 0.5);
-}
-
-.actor-item img{
-    display: block;
-    height: 188px;
-    width: 100%;
-}
-.actor-caption{
-    background-color: rgba(255, 255, 255, 0.18);
-    height: 56px;
-    padding: 2px 3px;
-}
-.actor-caption p{
-    margin: 0;
-}
-.actor-caption p:last-child{
-    font-size: 0.8em;
-    font-style: italic;
-    margin-top: 3px;
-}
-#iframe-div{
-    max-width: 1100px;
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-    height:0;
-    padding-bottom:42%;
-    overflow:hidden;
-}
-#iframe-div iframe{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-}
-#footer{
-    margin-top: 50px;
-    background-color: black;
-    border-top: 1px solid red;
-    box-shadow: 0 -1px 10px red;
-}
-#footer p{
-    padding-bottom: 20px;
-    text-align: center;
-    margin-top: 20px;
-}
-.footer-card{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-.footer-set h3{
-    margin: 20px 0;
-}
-.footer-set ul{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-}
-.footer-set li{
-    margin-top: 5px;
-}
-.footer-set a{
-    text-decoration: none;
-    color: white;
-}
-.footer-set a:hover{
-    color: red;
-}
-.
-/*
-main > img{
-    width: 100%;
-    position: fixed;
-    z-index: -1;
-}
-main > div{
-    width: 100%;
-    height: 200px;
-    background-color: #c6c6c6;
-    position: absolute;
-    top: 500px;
-}*/
