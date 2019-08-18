@@ -619,6 +619,15 @@ h2{
     .article .img img{
         margin-left: -80px;
     }
+     .actor-item{
+        width: 90px
+    }
+    .actor-item img{
+        height: 140px;
+    }
+    .actor-item .actor-caption{
+        height:65px
+    }
 }
 @media screen and (max-width:376px){
     .article .img{
