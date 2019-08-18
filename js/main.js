@@ -18,12 +18,10 @@
     changePicture();
     window.addEventListener('resize',changePicture);
 
-    bars.addEventListener('click',function (event) {
-        var bars = $("#bars");
-        var header = $("header");
-
-        header.classList.toggle('open');
+    $("#bars").click(function () {
+        $("header").toggleClass('open');
     });
+
     function addImages(path, selector, season) {
         var imgPath = path;
         var imagesDiv = $(selector);
