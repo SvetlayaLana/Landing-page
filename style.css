@@ -429,7 +429,7 @@ h2{
     #picture{
         background-image: url("img/img-small/logo1_1000px.jpg");
     }
-    #plot p, #characters p, .footer-card{
+    #plot p, #characters p, .footer-card li{
         font-size: 15px;
     }
 }
@@ -513,6 +513,10 @@ h2{
     :root{
         --header-height: 65px;
     }
+    h3{
+        font-weight: 300;
+        font-size: 18px;
+    }
     header{
         overflow: hidden;
         height: var(--header-height);
@@ -575,6 +579,7 @@ h2{
         max-width:100%;
         margin: 0;
     }
+
 }
 
 
@@ -588,7 +593,7 @@ h2{
     h2{
         font-size:20px;
     }
-    p{
+    #plot p, #characters p, .footer-card li{
         font-size: 14px !important;
     }
     .nav-item{
@@ -613,5 +618,19 @@ h2{
     }
     .article .img img{
         margin-left: -80px;
+    }
+}
+@media screen and (max-width:376px){
+    .article .img{
+        height:250px;
+    }
+    .article .img img{
+        margin-left: -50px
+    }
+}
+@media screen and (max-width:320px){
+    .footer-card{
+        flex-direction:column;
+        align-items: center;
     }
 }
