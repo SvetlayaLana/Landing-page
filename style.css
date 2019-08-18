@@ -584,9 +584,9 @@ h2{
 
 
 @media screen and (max-width: 460px){
-    :root{
+    /*:root{
         --header-height: 55px;
-    }
+    }*/
     h1{
         font-size:1.2em;
     }
@@ -599,6 +599,7 @@ h2{
     .nav-item{
         width: 100%;
         background-color: black;
+        line-height: 55px;
     }
     .nav-item:hover{
         box-shadow: 0 5px 20px rgba(255,0,0,0.5);
@@ -636,10 +637,17 @@ h2{
     .article .img img{
         margin-left: -50px
     }
+    .actor-item{
+        width: 80px
+    }
+    .actor-item img{
+        height: 125px;
+    }
+   
 }
-@media screen and (max-width:320px){
+@media screen and (max-width:321px){
     .footer-card{
         flex-direction:column;
         align-items: center;
-    }
+    }    
 }
