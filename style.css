@@ -508,6 +508,14 @@ h2{
     .season .image-block img:hover{
         transform: scale(1.5);
     }
+    .article .img img{
+        margin-left: -160px;
+    }
+}
+@media screen and (max-width: 700px){
+    .article .img img{
+        margin-left: -170px;
+    }
 }
 @media screen and (max-width: 590px) {
     :root{
