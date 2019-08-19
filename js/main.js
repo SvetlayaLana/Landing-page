@@ -18,8 +18,15 @@
     changePicture();
     window.addEventListener('resize',changePicture);
 
-    $("#bars").click(function () {
+    $("#bars").click(function (event) {
         $("header").toggleClass('open');
+    });
+
+    $(document).mouseup(function (e) {
+        var bars = $("#bars");
+        if(!bars.is(e.target) && bars.has(e.target).length === 0 && window.innerWidth < 590){
+            $("header").removeClass('open');
+        }
     });
 
     function addImages(path, selector, season) {
@@ -36,5 +43,4 @@
     addImages("img/img-small/season2/s2_", "#second-season div", 2);
     addImages("img/img-small/season3/s3_", "#third-season div", 3);
 })(window);
-
 
