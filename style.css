@@ -19,7 +19,6 @@
     margin: 0;
 }
 body{
-    margin: 0;
     background-color: black;
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -40,8 +39,11 @@ header{
     margin: 0 auto;
     height: inherit;
 }
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
 #header-title{
-    float: left;
     line-height: var(--header-height);
     font-family: 'Benguiat Bold', sans-serif;
     font-size: 3em;
@@ -56,12 +58,10 @@ header{
     display: inline-block;
 }
 nav{
-    float: right;
     height: inherit;
 }
 #navbar{
     padding: 0;
-    margin: 0;
     display: flex;
     height: inherit;
 }
@@ -145,7 +145,7 @@ h1{
     margin-top: 2.5em;
     margin-bottom: 2.5em;
     color: #dd0000;
-    text-shadow: 0 1px black, 2px 3px 0px black;
+    text-shadow: 0 1px black, 2px 3px black;
     text-transform: uppercase;
     font-weight: 700;
 }
@@ -171,7 +171,7 @@ h2{
     max-width: 1200px;
     width: 100%;
     border: 2px ridge #730000;
-    box-shadow: 0px 12px 11px 5px rgba(1, 0, 0, 0.74);
+    box-shadow: 0 12px 11px 5px rgba(1, 0, 0, 0.74);
     text-align: justify;
     padding: 20px 50px;
     box-sizing: border-box;
@@ -186,7 +186,6 @@ h2{
 }
 .season p{
     text-indent: 2em;
-    margin: 0;
     hyphens: auto;
     line-height: 1.5;
     font-size: 16px;
